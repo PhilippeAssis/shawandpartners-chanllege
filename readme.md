@@ -28,7 +28,7 @@ You can use [livereload](https://github.com/vohof/gulp-livereload) (already incl
 
 # Rest
 
- - **GET /palindrome**
+ - **GET /palindrome:**
 This is the only route (not the index) available in the application. It is required the query "word" containing the word or phrase to be verified by application
 
 
