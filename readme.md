@@ -1,5 +1,5 @@
 # Shaw and Partners Chanllege
-Test for full-stack developer
+Examines whether the word or phrase is defined by the user or is not a palidrome. This application was written solely for the challenge to wave of full-stack developer shaw and partners
 
 ## Install
 ```bash
@@ -8,12 +8,18 @@ cd shawandpartners-chanllege &&
 npm install &&
 gulp
 ```
-This application uses the livereload, you can learn more about it in
-[gulp-livereload](https://github.com/vohof/gulp-livereload)
 
 ## Run
 ```bash
   npm start
 ```
+
+## Test
+```bash
+  npm test
+```
+Run the test only after running the application.
+
+You can use [livereload](https://github.com/vohof/gulp-livereload) (already included) in the application running 'gulp live'
 
 Good luck!

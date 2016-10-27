@@ -13,15 +13,12 @@ var cleanCSS = require('gulp-clean-css');
 var watch = {},
     watchTask = [];
 
-
-watchTask.push('images')
 gulp.task('images', function() {
     gulp.src('./assets/images/*')
         .pipe(gulp.dest('./public/images'))
 });
 
 watch.scripts = './assets/js/app.js'
-watchTask.push('scripts')
 gulp.task('scripts', function() {
     gulp.src(['node_modules/vue/dist/vue.min.js', 'node_modules/jquery-ajax/jquery.min.js', './assets/js/app.js'])
         .pipe(plumber())
@@ -32,7 +29,6 @@ gulp.task('scripts', function() {
 });
 
 watch.stylus = './assets/styl/*';
-watchTask.push('stylus');
 gulp.task('stylus', function() {
     gulp.src('./assets/styl/*.styl')
         .pipe(plumber())
@@ -45,18 +41,16 @@ gulp.task('stylus', function() {
 });
 
 watch.views = './views/*.pug';
-watchTask.push('views');
 gulp.task('views', function() {
     gulp.src('./views/*.pug')
         .pipe(livereload());
 });
 
-watchTask.push('watch')
 gulp.task('watch', function() {
     livereload.listen();
     autowatch(gulp, watch);
 });
 
-watch.stylus
 
-gulp.task('default', watchTask);
+gulp.task('default', ['scripts', 'images', 'stylus']);
+gulp.task('live', ['scripts', 'images', 'stylus', 'views', 'watch']);
