@@ -2,7 +2,7 @@
 Examines whether the word or phrase is defined by the user or is not a palidrome. This application was written solely for the challenge to wave of full-stack developer shaw and partners
 
 ## Required
-NodeJs >= v4.5.0
+ - NodeJs >= v4.5.0
 
 ## Install
 ```bash
