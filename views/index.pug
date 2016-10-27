@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    title Shawand Partners - The full-stack challenge
+    link(rel='stylesheet', href="css/styles.css")
+
+  body
+    .wrap#app
+      h1 Your word is a palindrome?
+      .form-group(v-bind:class="{ success }")
+        input.form-control(v-model="palindrome", placeholder="Type a word")
+      .result {{ result }}
+
+      script(src="js/scripts.js")
