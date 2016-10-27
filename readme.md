@@ -23,7 +23,7 @@ gulp
 ```
 Run the test only after running the application.
 
-You can use [livereload](https://github.com/vohof/gulp-livereload) (already included) in the application running 'gulp live'
+You can use [livereload](https://github.com/vohof/gulp-livereload) (already included) in the application running `gulp live` 
 
 
 # Rest
