@@ -1,7 +1,7 @@
 {
   "name": "shawandpartners-chanllege",
   "version": "0.0.2",
-  "description": "Test for full stack developer",
+  "description": "Test for full-stack developer",
   "main": "index.js",
   "dependencies": {
     "bootswatch": "^3.3.7",
